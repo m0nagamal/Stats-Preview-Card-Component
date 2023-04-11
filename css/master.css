@@ -1,0 +1,135 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    main {
+        height: auto;
+    }
+}
+
+main section {
+    margin: 0 180px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+@media (max-width: 1200px) {
+    main section {
+        flex-direction: column-reverse;
+        margin: 60px 20px;
+    }
+}
+
+main article {
+    width: 52%;
+    padding: 70px 100px 60px 70px;
+}
+
+main article h1 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+    main article {
+        text-align: center;
+        padding: 30px;
+        width: 100%;
+    }
+    main article h1 {
+        font-size: 26px;
+    }
+}
+
+main article h1 span {
+    color: hsl(277, 64%, 61%);
+}
+
+main article p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 50px;
+}
+
+main article .stats {
+    display: flex;
+    gap: 60px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    main article .stats {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+main article .stats h2 {
+    font-family: 'Inter', sans-serif;
+    color: hsla(0, 0%, 100%);
+    padding-bottom: 5px;
+}
+
+main article .stats span {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+main figure {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+@media (max-width: 1200px) {
+    main figure {
+        width: 100%;
+    }
+}
+
+main figure::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%, 0.55);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main figure img {
+    width: 100%;
+    height: 100%;
+}
